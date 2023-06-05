@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+            <a id="leaderboard" href="highscore.html">View Highscores <i class="fas fa-hand-point-left fa-lg"></i> </i>
+            </a>    
+            </div>
+            <div>Time:<span id="timer"></span></div>
+        </nav>
+    </header>
+    <main>
+        <div class='container'>
+            <div class="description">
+                <h2>Coding Quiz challange</h2>
+                <p>Try to answer following code related questions within time limit.</p>
+                <p>Keep in mind that incorrect answers will panalise your score/time by 10 seconds</p>
+                <div class="buttons">
+                <button class="button" onclick="start()">Start Quiz</button>
+            </div>
+            </div>
+            
+            
+            <div class="questions none">
+                <ul class="questionCard" >
+                    <button class='questionText button'></button>
+                    <button class='button w-100' onClick="checkAns(this)"></button>
+                    <button class='button w-100' onClick="checkAns(this)"></button>
+                    <button class='button w-100' onClick="checkAns(this)"></button>
+                    <button class='button w-100' onClick="checkAns(this)"></button>
+                    <hr class="m-2">
+                    <li class='answer'></li>
+                </ul>
+
+            </div>
+            <div class="all-done none">
+                <h3>All Done!</h3>
+                <p>Your final score is <strong><span id="ans"></span></strong></p>
+                <span>Enter Initials</span><input type="text" ><button class="button" onclick="submit()">Submit</button>
+            </div>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
