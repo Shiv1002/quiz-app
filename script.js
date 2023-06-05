@@ -153,7 +153,6 @@ function showQ() {
     qCard[0].innerHTML = qInfo.questionText;
     var ind = 1;
     for (var obj of qInfo.options) {
-        console.log(qCard[ind])
         qCard[ind].innerHTML = obj;
         ind++;
     }
