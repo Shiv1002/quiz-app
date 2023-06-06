@@ -77,9 +77,6 @@ margin: 0.2rem 0;
    text-align: start;
 }
 
-/* li{
-    list-style: none;
-} */
 @media only screen and (max-width:480px) {
     .all-done,.Highscores{
         width: 70%;
